@@ -1,0 +1,131 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085); /* Warna gradien latar belakang */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.quiz-container {
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f3);
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #4a4e69;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Question */
+#question {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a4e69;
+}
+
+/* Answer Options */
+#answers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 15px;
+}
+
+#answers li {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    background: linear-gradient(135deg, #f6f7fb, #e6e9f0);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+#answers li:hover {
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+/* Correct and Incorrect Styling */
+#answers li.correct {
+    background: linear-gradient(135deg, #9be15d, #00e3ae);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+    color: white;
+    font-weight: 700;
+}
+
+#answers li.incorrect {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+    color: white;
+    font-weight: 700;
+}
+
+/* Button */
+button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2b8ed1, #497bda);
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+/* Result */
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
