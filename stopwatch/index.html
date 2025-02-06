@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch & Timer</h1>
+        <div class="tabs">
+            <button class="tab active" id="stopwatch-tab">Stopwatch</button>
+            <button class="tab" id="timer-tab">Timer</button>
+        </div>
+
+        <!-- Stopwatch Section -->
+        <div id="stopwatch-section" class="section">
+            <p id="stopwatch-display">00:00:00</p>
+            <button id="start-stopwatch">Start</button>
+            <button id="pause-stopwatch" class="hidden">Pause</button>
+            <button id="reset-stopwatch">Reset</button>
+        </div>
+
+        <!-- Timer Section -->
+        <div id="timer-section" class="section hidden">
+            <input type="number" id="timer-input" placeholder="Masukkan waktu (detik)">
+            <p id="timer-display">00:00</p>
+            <button id="start-timer">Start</button>
+            <button id="pause-timer" class="hidden">Pause</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
